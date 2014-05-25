@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>使用HTML5和CSS3制作日历图标</title>
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+.logo{
+    text-align:center;
+    width:350px;
+    height:120px;
+    margin:auto;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+@keyframes blink
+{
+    79% {color:inherit;text-shadow:inherit;}
+    80%   {color:#333;text-shadow:none;}
+    80.5% {color:inherit;text-shadow:inherit;}
+    81%   {color:#333;text-shadow:none;}
+    81.5% {color:inherit;text-shadow:inherit;}
+    82%   {color:#333;text-shadow:none;}
+    82.5% {color:inherit;text-shadow:inherit;}
+}
+body{background:#444;}
+.logo{
+    font:100 5em "Exo 2";
+    @cl:#4ff;
+    color:#fff;
+    text-shadow: 0 -40px 100px,0 0 2px, 0 0 1em @cl, 0 0 0.5em @cl, 0 0 0.1em @cl;
+    b{
+        animation:blink linear infinite 10s;
+        font:inherit;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="logo">x<b>iong</b>f<b>usong</b></div>
+<div class="logo">zh<b>ang</b>y<b>ana</b></div>
+</body>
+</html>
